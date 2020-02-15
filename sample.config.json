@@ -1,0 +1,37 @@
+{
+    "general": {
+        "requestDelay": 3000,
+        "defaultPickPolicy": "notNull",
+        "baseDir": "{homeDir}/sports"
+    },
+    "credentials": {
+        "username": "login@mail.com",
+        "password": "secret"
+    },
+    "activities": {
+        "search": {
+            "parameters": {
+                "activityType": "swimming",
+                "activitySubType": "lap_swimming"
+            },
+            "limit": 100,
+            "path": "{baseDir}/lap_swimming/lap_swimming.json",
+            "pick": [
+                "activityId",
+                "activityName",
+                "startTimeLocal as startTime",
+                "activityType.typeKey as activityTypeKey"
+            ]
+        },
+        "fetch": [
+            {
+                "url": "https://connect.garmin.com/modern/proxy/activity-service/activity/{activityId}/splits",
+                "path": "{baseDir}/lap_swimming/splits/{activityId}.json"
+            },
+            {
+                "url": "https://connect.garmin.com/modern/proxy/activity-service/activity/{activityId}",
+                "path": "{baseDir}/lap_swimming/activity/{activityId}.json"
+            }
+        ]
+    }
+}
