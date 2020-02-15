@@ -1,9 +1,13 @@
 {
   "name": "garmin-connect-scraper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Incremental Puppeteer based Garmin Connect scraper",
   "bin": "bin/main.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evg656e/garmin-connect-scraper.git"
+  },
   "scripts": {
     "start": "node --experimental-specifier-resolution=node --harmony-optional-chaining --harmony-nullish ./bin/main.js"
   },
@@ -14,6 +18,10 @@
   ],
   "author": "evg656e <evg656e@gmail.com>",
   "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/evg656e/garmin-connect-scraper/issues"
+  },
+  "homepage": "https://github.com/evg656e/garmin-connect-scraper#readme",
   "devDependencies": {
     "@types/hapi__joi": "^16.0.6",
     "@types/minimist": "^1.2.0",
