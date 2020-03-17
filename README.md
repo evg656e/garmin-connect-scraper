@@ -16,6 +16,8 @@ To change the default download path or to download additional data, use config f
 garmin-connect-scraper --config=myconfig.json --username=login@mail.com --password=secret
 ```
 
+Usage example: https://github.com/evg656e/garmin-routines-updater
+
 ## Configuration
 
 ```jsonc

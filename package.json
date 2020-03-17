@@ -1,6 +1,6 @@
 {
   "name": "garmin-connect-scraper",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Incremental Puppeteer based Garmin Connect scraper",
   "bin": "bin/main.js",
   "type": "module",
