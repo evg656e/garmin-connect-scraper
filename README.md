@@ -1,6 +1,14 @@
 # garmin-connect-scraper
 
+[![npm](https://img.shields.io/npm/v/garmin-connect-scraper.svg)](https://www.npmjs.com/package/garmin-connect-scraper)
+
 Incremental [Puppeteer](https://github.com/puppeteer/puppeteer) based Garmin Connect™ scraper.
+
+## Install
+
+```console
+npm i garmin-connect-scraper
+```
 
 ## Usage
 
